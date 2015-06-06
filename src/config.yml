@@ -1,0 +1,40 @@
+joinMessage: '&6&lHas entrado al FullPvP!'
+leaveMessage: '&5&lHas salido del FullPvP!'
+TNTFuseTicks: 40
+foodLevel: 20
+keepFood: true
+SignStart: '[FullPvP]'
+SignColor: '&1'
+CobwebDestroyTimeInSeconds: 30
+FireDestroyTimeTicks: 200
+disallowItemDropping: true
+denyItemPickup: true
+noItemDropMessage: '&4No puedes dropear items aqui.'
+commandDenied: '&4No tienes acceso a este comando.'
+broadcastKill: true
+onlyInGame: true
+useActualPlayerNamesInTheKillMessage: true
+killMessage: '&5[&6FullPvP&5] &9%killername% con %hearts% corazones de vida &8ha matado a &9%victimname% &8con el kit %killerkit%.'
+DropItemOnDeath: true
+DropItemID: 388
+DropItemDamageValue: 1
+DropItemRegenPotency: 3
+DropItemRegenDuration: 40
+Stats_kills_self: ' &2Tus bajas: %kills%'
+Stats_deaths_self: ' &2Tus muertes: %deaths%'
+Stats_KillToDeathRatio_self: ' &2Tu B/M ratio: %KDR%'
+Stats_kills_other: ' &2%playername% bajas: %kills%'
+Stats_deaths_other: ' &2%playername% muertes: %deaths%'
+Stats_KillToDeathRatio_other: ' &2%playername% B/M ratio: %KDR%'
+CommandWhiteList:
+  - money
+  - list
+  - kick
+  - mute
+  - jail
+  - ban
+  - msg
+  - t
+  - tell
+EnableTNTInTheseWorlds:
+  - FullPvP

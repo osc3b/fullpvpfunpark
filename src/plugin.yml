@@ -1,0 +1,54 @@
+name: FullPvP
+description: FullPvP del servidor Minecraft FunPark
+version: 1.0
+author: osc3b
+website: http://www.minecraftfunpark.com
+main: com.minecraftfunpark.fullpvp.Main
+commands:
+  kitpvp:
+    usage: /<commands> <args> [args...]
+    description: kitpvp main command
+    permission: kitpvp.root
+    permission-message: You do not have \'kitpvp.root\'.
+permissions:
+  kitpvp.broadcastKill:
+    default: true
+    description: know about kills
+  kitpvp.*:
+    default: false
+    children:
+      kitpvp.root: true
+      kitpvp.broadcastKill: true
+      kitpvp.join: true
+      kitpvp.addarena: true
+      kitpvp.delarena: true
+      kitpvp.setinv: true
+      kitpvp.managearena: true
+      kitpvp.arena.*: true
+      kitpvp.kit.*: true
+      kitpvp.join: true
+  kitpvp.root:
+    default: true
+    description: allow access to the root command
+  kitpvp.join:
+    default: true
+    description: allow a player to join.
+  kitpvp.kit.*:
+    default: true
+    description: Allow a player to join with ALL the kits
+  kitpvp.arena.*:
+    default: true
+    description: Allow a player to join ALL the arenas
+  kitpvp.managearena:
+    default: op
+    description: Allow a player to modify arenas
+  kitpvp.setinv:
+    default: op
+    description: Allow a player to create kits
+  kitpvp.delarena:
+    default: op
+    description: Allow a player player to delete an arena.
+  kitpvp.addarena:
+    default: op
+    description: Allow a player to create an arena
+
